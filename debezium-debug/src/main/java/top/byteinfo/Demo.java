@@ -83,6 +83,8 @@ public class Demo {
                 recordCommitter.markProcessed(changeEvent);
             }
             recordCommitter.markBatchFinished();
+            throw new RuntimeException("debug");
+
         }
 
     }
